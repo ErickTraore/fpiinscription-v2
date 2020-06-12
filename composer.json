@@ -28,10 +28,14 @@
         "symfony/serializer-pack": "*",
         "symfony/string": "5.1.*",
         "symfony/translation": "5.1.*",
+        "symfony/twig-bundle": "5.1.*",
         "symfony/twig-pack": "*",
         "symfony/validator": "5.1.*",
         "symfony/web-link": "5.1.*",
-        "symfony/yaml": "5.1.*"
+        "symfony/yaml": "5.1.*",
+        "twig/cssinliner-extra": "^3.0",
+        "twig/extra-bundle": "^3.0",
+        "twig/inky-extra": "^3.0"
     },
     "require-dev": {
         "symfony/debug-pack": "*",

@@ -5,6 +5,7 @@
 
 namespace App\Entity;
 
+use App\Entity\Adhesion;
 use App\Controller\TestezController;
 use Doctrine\ORM\Mapping as ORM;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;

@@ -4,8 +4,8 @@ namespace App\Controller;
 
 use App\Controller\CountController;
 use App\Controller\ObjectManager;
+use App\Entity\Adhesion;
 use App\Entity\Count;
-use App\Entity\adhesion;
 use App\Form\CountType;
 use App\Repository\CountRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -118,6 +118,7 @@ class CountController extends AbstractController
         $adhesion = $user->getAdhesion();
         $adhesionId = $adhesion->getId();
         $adhesionfirstname = $adhesion->getFirstName();
+        $adhesionemail = $adhesion->getEmail();
         $counts = $countRepository->findBy(
             array('adhesion' => $adhesionId) // Critere 
         );
@@ -128,7 +129,8 @@ class CountController extends AbstractController
         ,[
             'counts' => $counts,
             'adhesionId' => $adhesionId,
-            'adhesionfirstname' => $adhesionfirstname
+            'adhesionfirstname' => $adhesionfirstname,
+            'adhesionemail' => $adhesionemail
         ]);
     }
 

@@ -5,6 +5,7 @@ namespace App\Entity;
 use App\Entity\Adhesion;
 use Doctrine\ORM\Mapping as ORM;
 
+
 /**
  * @ORM\Entity(repositoryClass="App\Repository\CountRepository")
  */
@@ -18,7 +19,7 @@ class Count
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\adhesion")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Adhesion")
      * @ORM\JoinColumn(nullable=false)
      */
     private $adhesion;
